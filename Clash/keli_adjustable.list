@@ -6,7 +6,10 @@ DOMAIN-KEYWORD,speedtest
 DOMAIN-SUFFIX,emby.wtf
 DOMAIN-KEYWORD,emby
 
-DOMAIN-SUFFIX,k.autohome.com.cn
-DOMAIN-KEYWORD,autohome
+# DOMAIN-SUFFIX,k.autohome.com.cn
+# DOMAIN-KEYWORD,autohome
 
 DOMAIN-SUFFIX,api.dler.io
+
+DOMAIN-SUFFIX,apple.com
+
