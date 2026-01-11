@@ -1,23 +1,18 @@
-# 代理补充列表
-
-# 域名后缀匹配
-DOMAIN-SUFFIX,qichiyu.com
-
-# 域名关键字匹配
-DOMAIN-KEYWORD,1e100
-
-# 国外DNS
-DOMAIN-SUFFIX,dns.google
-DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
-DOMAIN-SUFFIX,dot.sb
-DOMAIN-SUFFIX,dns.umbrella.com
-DOMAIN-SUFFIX,dns.quad9.net
+# === 强制代理：加密 DNS（防污染/阻断）===
 DOMAIN-SUFFIX,dns.google
 DOMAIN-SUFFIX,cloudflare-dns.com
-DOMAIN-SUFFIX,doh.dns.sb
-DOMAIN-SUFFIX,doh.opendns.com
+DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
+DOMAIN-SUFFIX,dot.sb
 DOMAIN-SUFFIX,dns.quad9.net
-DOMAIN-SUFFIX,hk-hkg.doh.sb
+DOMAIN-SUFFIX,dns.umbrella.com
+
+# === Google 基础设施（覆盖所有子域）===
+DOMAIN-KEYWORD,1e100
+
+# === 你的自有服务（仅当确定需代理时保留）===
+# DOMAIN-SUFFIX,xxxx.com   ← 谨慎添加！
+
+# === 对应 DNS 服务器 IP（防 App 直连 IP）===
 IP-CIDR,8.8.8.8/32,no-resolve
 IP-CIDR,8.8.4.4/32,no-resolve
 IP-CIDR,1.1.1.1/32,no-resolve
